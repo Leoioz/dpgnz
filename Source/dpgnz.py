@@ -21,9 +21,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 
+class License:
+    License=''
+    def __init__(self):
+        pass
 
-class Readme:
-    """
-    创作声明放在此处。
-    """
-    pass
