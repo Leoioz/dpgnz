@@ -29,7 +29,7 @@ SOFTWARE.
 #     @property
 #     def area(self):
 #         return 3.14 * self.radius ** 2
-
+#中文注释
 #     @property
 #     def perimeter(self):
 #         return 2 * 3.14 * self.radius
@@ -41,7 +41,7 @@ SOFTWARE.
 class Circle:
     def __init__(self, radius):
         self.radius = radius
-#掌握玩意是
+
     @property
     def area(self):
         return 3.14 * self.radius
