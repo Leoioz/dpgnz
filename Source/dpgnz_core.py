@@ -22,25 +22,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 from os import *
-from sys import *
+from sys import argv
 from time import *
 from dpgnz_data import *
 from dpgnz_ui import *
 
 if __name__ == '__main__':
-    #初始化一个app程序
-    app = QApplication([])
-    #加载ui文件
-    ui = QFile(r"dpgnz_ui.py")
-    #创建ui加载器
-    loader = QUiLoader()
-    #加载UI文件并实例化为窗口对象
-    window = loader.load(ui)
-    
-    #释放资源并显示窗口
-    ui.close()
-    window.show()
-    
-    #最后运行app
-    app.exec_()
-    pass
+    app = QApplication(argv)
+    w = QWidget()
+    ui = Ui_Form()
+    ui.setupUi(w)
+    w.show()
+    exit(app.exec_())
