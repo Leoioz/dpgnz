@@ -45,6 +45,7 @@ class Circle:
     @property
     def area(self):
         return 3.14 * self.radius
+#中文注释
 
     @area.setter
     def area(self, value):
