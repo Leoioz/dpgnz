@@ -24,3 +24,13 @@ SOFTWARE.
 
 from dpgnz_data import *
 from dpgnz_ui import *
+from os import *
+from sys import *
+from syslog import *
+from time import *
+
+if __name__ == '__main__':
+    ui = Ui_Form()
+    ui.setupUi()
+
+    pass
