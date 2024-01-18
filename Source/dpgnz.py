@@ -21,22 +21,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
-
-class Circle:
-    def __init__(self, radius):
-        self.radius = radius
-
-    @property
-    def area(self):
-        return 3.14 * self.radius
-#中文注释
-    @area.setter
-    def area(self, value):
-        self.radius = value ** 0.5
-    def perimeter(self):
-        return 2 * 3.14 * self.radius
-
-circle = Circle(5)
-print(circle.radius)    # 输出: 5
-print(circle.area)      # 输出: 78.5
-print(circle.perimeter) # 输出: 31.4
