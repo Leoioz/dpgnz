@@ -22,15 +22,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 from os import *
-from sys import argv
 from time import *
 from dpgnz_data import *
 from dpgnz_ui import *
 
-if __name__ == '__main__':
-    app = QApplication(argv)
-    w = QWidget()
-    ui = Ui_Form()
-    ui.setupUi(w)
-    w.show()
-    exit(app.exec_())
+class mywgeit(Ui_Form):
+    def __init__ (self):
+        super().__init__()
+        
+if  __name__ == "__main__" :
+    app = QApplication([])
+    window = QWidget()
+    
+    ui =mywgeit()
+    ui.setupUi(window)
+    
+    window.show()
+    app.exec_()
