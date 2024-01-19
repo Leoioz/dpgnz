@@ -25,16 +25,8 @@ SOFTWARE.
 import os
 import sys
 import time
-
-sys.path.append('../UI')
-
-# current_dir = os.path.dirname(os.path.abspath(__file__))
-
-# parent_dir = os.path.join(current_dir, '../UI')
-# sys.path.append(parent_dir)
-
-sys.path.append('e:\\github\\dpgnz\\UI')
-
+sys.path.append('..\\dpgnz\\ui')
+from dpgnz_data import *
 from dpgnz_ui import *
 
 class mywgeit(Ui_MainWindow):
