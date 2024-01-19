@@ -21,9 +21,20 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
-from os import *
-from time import *
-from dpgnz_data import *
+
+import os
+import sys
+import time
+
+sys.path.append('../UI')
+
+# current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# parent_dir = os.path.join(current_dir, '../UI')
+# sys.path.append(parent_dir)
+
+sys.path.append('e:\\github\\dpgnz\\UI')
+
 from dpgnz_ui import *
 
 class mywgeit(Ui_MainWindow):
@@ -43,3 +54,4 @@ if  __name__ == "__main__" :
     #单步调试下来发现，其实widget是根本的窗口类，我们创建一个实例，有窗口得告诉窗口里面什么东西放哪里，而放的内容描述清单就是designer里面uic转出的py文件，setupui这个函数作用是把uifrom里面描述的布局内容，放置到qwidget的窗口中。
     window.show()
     app.exec_()
+    
