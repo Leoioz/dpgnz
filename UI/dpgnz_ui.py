@@ -94,6 +94,10 @@ class Ui_MainWindow(object):
         self.comboBox = QComboBox(self.widget)
         self.comboBox.addItem("")
         self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
         self.comboBox.setObjectName(u"comboBox")
 
         self.verticalLayout_2.addWidget(self.comboBox)
@@ -247,6 +251,10 @@ class Ui_MainWindow(object):
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"\u7535\u8111\u7c7b\u578b\uff1a", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"\u6280\u672f\u90e8", None))
         self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"QA", None))
+        self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"QA", None))
+        self.comboBox.setItemText(3, QCoreApplication.translate("MainWindow", u"QA", None))
+        self.comboBox.setItemText(4, QCoreApplication.translate("MainWindow", u"QA", None))
+        self.comboBox.setItemText(5, QCoreApplication.translate("MainWindow", u"QA", None))
 
         self.comboBox_2.setItemText(0, QCoreApplication.translate("MainWindow", u"\u53f0\u5f0f\u8ba1\u7b97\u673a", None))
         self.comboBox_2.setItemText(1, QCoreApplication.translate("MainWindow", u"\u7b14\u8bb0\u672c\u7535\u8111", None))

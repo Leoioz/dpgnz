@@ -1,6 +1,5 @@
 {
     "python.analysis.extraPaths": [
-        "./UI",
-        "./Source"
+        "..\\dpgnz\\ui"
     ]
 }
