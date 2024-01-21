@@ -46,3 +46,6 @@ if  __name__ == "__main__" :
     #单步调试下来发现，其实widget是根本的窗口类，我们创建一个实例，有窗口得告诉窗口里面什么东西放哪里，而放的内容描述清单就是designer里面uic转出的py文件，setupui这个函数作用是把uifrom里面描述的布局内容，放置到qwidget的窗口中。
     window.show()
     app.exec_()
+
+    
+    ##12
