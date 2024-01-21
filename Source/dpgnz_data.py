@@ -22,7 +22,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 
-from dpgnz_core import *
+
 from pymysql import connect, Error
 
 def create_connection(host_name, user_name, user_password):
