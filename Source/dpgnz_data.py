@@ -22,15 +22,42 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 
-
-from pymysql import connect, Error
-
-def create_connection(host_name, user_name, user_password):
-    connection = None
-    try:
-        connection = connect(host=host_name,
-                                user=user_name,
-                                password=user_password)
-        print("Connection to MySQL DB successful")
-    except Error as e:
-        print(f"The error '{e}' occurred")
+import pymysql
+# db=pymysql.connect(host='10.11.13.63',user='root',password='Bb92293--',database='mysql',charset='utf8')
+# cursor=db.cursor()
+# cursor.execute("SELECT VERSION()")
+# data = cursor.fetchone()
+# print(data)
+# if data != None:
+#     print("数据库连接成功！")
+# else:
+#     print("数据库连接失败！")
+    
+class dpgnz_mysql(pymysql):
+    def __init__(self):
+        super().__init__()
+        self.host=host
+        self.user=user
+        self.password=password
+        self.database=database
+        self.charset=charset
+        self.connect_mysql(host,user,password)
+        
+    def connect_mysql(self,host,user,password):
+        self.db=pymysql.connect(host,user,password,database='mysql',charset='utf8')
+        cursor=self.db.cursor()
+        cursor.execute("SELECT VERSION()")
+        data = cursor.fetchone()
+        print(data)
+        if data != None:
+            print("数据库连接成功！")
+        else:
+            print("数据库连接失败！")
+            
+    def close_mysql():
+        self.db.close()
+        print("数据库连接已关闭！")
+        
+if __name__ == '__main__':
+    db1 = dpgnz_mysql()
+    db1.connect_mysql('10.11.13.63','root','Bb92293--')

@@ -31,8 +31,12 @@ from dpgnz_data import *
 class mywgeit(Ui_MainWindow):
     def __init__ (self):
         super().__init__()
+        self.setupUi(self)
+        self.retranslateUi(self)
+        
         
 if  __name__ == "__main__" :
+    
     app = QApplication()
     window = QMainWindow()
     ui =Ui_MainWindow()
