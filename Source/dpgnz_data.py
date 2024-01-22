@@ -23,25 +23,16 @@ SOFTWARE.
 '''
 
 import pymysql
-# db=pymysql.connect(host='10.11.13.63',user='root',password='Bb92293--',database='mysql',charset='utf8')
-# cursor=db.cursor()
-# cursor.execute("SELECT VERSION()")
-# data = cursor.fetchone()
-# print(data)
-# if data != None:
-#     print("数据库连接成功！")
-# else:
-#     print("数据库连接失败！")
     
 class dpgnz_mysql():
-    def __init__(self,host,user,password):
-        self.host=host
-        self.user=user
-        self.password=password
-        self.database='mysql'
-        self.charset='utf8'
-        self.db=pymysql.connect(host=self.host,user=self.user,password=self.password,database=self.database,charset=self.charset)
-        self.cursor=self.db.cursor()
+    def __init__(self,host,user,password): 
+        self.host                        = host
+        self.user                        = user
+        self.password                    = password
+        self.database                    = 'mysql'
+        self.charset                     = 'utf8'
+        self.db                          = pymysql.connect(host = self.host,user = self.user,password = self.password,database = self.database,charset = self.charset)
+        self.cursor                      = self.db.cursor()
         
     # 方法一  
     # def connect_mysql(self):
@@ -87,7 +78,7 @@ class dpgnz_mysql():
     def do_sql(self,sql):
         print(self.cursor())
         try:
-            cursor=pymysql.connect.cursor()
+            cursor = pymysql.connect.cursor()
             cursor.execute(sql)
         except Exception as e:
             print(e)
