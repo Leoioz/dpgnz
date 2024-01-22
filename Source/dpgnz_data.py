@@ -34,14 +34,15 @@ import pymysql
 #     print("数据库连接失败！")
     
 class dpgnz_mysql():
-    def __init__(self):
-        self.host='10.11.13.63'
-        self.user='root'
-        self.password='Bb92293--'
+    def __init__(self,host,user,password):
+        self.host=host
+        self.user=user
+        self.password=password
         self.database='mysql'
         self.charset='utf8'
         self.db=pymysql.connect(host=self.host,user=self.user,password=self.password,database=self.database,charset=self.charset)
         self.cursor=self.db.cursor()
+        
     # 方法一  
     # def connect_mysql(self):
     #     db=pymysql.connect(host=self.host,user=self.user,password=self.password,database=self.database,charset=self.charset)
@@ -50,9 +51,9 @@ class dpgnz_mysql():
     #     data = cursor.fetchone()
     #     print(data)
     #     if data != None:
-    #         print("数据库连接成功！")
+    #         print("connect success!")
     #     else:
-    #         print("数据库连接失败！")
+    #         print("connect fail!")
 
     # 方法二    
     # def connect_mysql(self,host,user,password):
@@ -62,34 +63,38 @@ class dpgnz_mysql():
     #     data = cursor.fetchone()
     #     print(data)
     #     if data != None:
-    #         print("数据库连接成功！")
+    #         print("connect success!")
     #     else:
-    #         print("数据库连接失败！")
+    #         print("connect fail!")
     
     # 重构方法一   
     def connect_mysql(self):
         try:
-            db=pymysql.connect(host=self.host,user=self.user,password=self.password,database=self.database,charset=self.charset)
-            cursor=db.cursor()
-            data1 = cursor.execute("SELECT VERSION()")
-            data = cursor.fetchone()
-            print("游标在：",data1)
-            print(data)
+            self.cursor.execute("SELECT VERSION()")
+            data = self.cursor.fetchone()
+            print("Database version:",data)
             if data != None:
-                print("数据库连接成功！")
+                print("connect success!")
             else:
-                print("数据库连接失败！")
+                print("connect fail!")
         except ConnectionError as e:
-            print(e)  
+            print(e)
+        else:
+            pass
+        finally:
+            pass
 
-    def push_sql(self,sql):
-        print(pymysql.connect.cursor())
+    def do_sql(self,sql):
+        print(self.cursor())
         try:
             cursor=pymysql.connect.cursor()
             cursor.execute(sql)
-        except RuntimeError as e:
+        except Exception as e:
             print(e)
-        pass
+        else:
+            pass
+        finally:
+            pass
     
     def get():
         pass
@@ -98,7 +103,7 @@ class dpgnz_mysql():
         pass
     
 if __name__ == '__main__':
-    db = dpgnz_mysql()
+    db = dpgnz_mysql("10.11.13.63","root","Bb92293--")
     # 方法一调用
     db.connect_mysql()
     # 方法二调用
