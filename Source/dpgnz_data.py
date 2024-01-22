@@ -33,19 +33,18 @@ import pymysql
 # else:
 #     print("数据库连接失败！")
     
-class dpgnz_mysql(pymysql):
+class dpgnz_mysql():
     def __init__(self):
-        super().__init__()
-        self.host=host
-        self.user=user
-        self.password=password
-        self.database=database
-        self.charset=charset
-        self.connect_mysql(host,user,password)
-        
-    def connect_mysql(self,host,user,password):
-        self.db=pymysql.connect(host,user,password,database='mysql',charset='utf8')
-        cursor=self.db.cursor()
+        self.host='10.11.13.63'
+        self.user='root'
+        self.password='Bb92293--'
+        self.database='mysql'
+        self.charset='utf8'
+    
+    # 方法一  
+    def connect_mysql(self):
+        db=pymysql.connect(host=self.host,user=self.user,password=self.password,database=self.database,charset=self.charset)
+        cursor=db.cursor()
         cursor.execute("SELECT VERSION()")
         data = cursor.fetchone()
         print(data)
@@ -53,11 +52,23 @@ class dpgnz_mysql(pymysql):
             print("数据库连接成功！")
         else:
             print("数据库连接失败！")
+
+    # 方法二    
+    # def connect_mysql(self,host,user,password):
+    #     db = pymysql.connect(host=host,user=user,password=password)
+    #     cursor=db.cursor()
+    #     cursor.execute("SELECT VERSION()")
+    #     data = cursor.fetchone()
+    #     print(data)
+    #     if data != None:
+    #         print("数据库连接成功！")
+    #     else:
+    #         print("数据库连接失败！")
             
-    def close_mysql():
-        self.db.close()
-        print("数据库连接已关闭！")
-        
+
 if __name__ == '__main__':
-    db1 = dpgnz_mysql()
-    db1.connect_mysql('10.11.13.63','root','Bb92293--')
+    db = dpgnz_mysql()
+    # 方法一调用
+    db.connect_mysql()
+    # 方法二调用
+    # db.connect_mysql("10.11.13.63","root","Bb92293--")
