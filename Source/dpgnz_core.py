@@ -27,6 +27,7 @@ import sys
 import time
 from dpgnz_ui import *
 from dpgnz_data import *
+from dpgnz_except import *
 
 class mywgeit(Ui_MainWindow):
     def __init__ (self):
