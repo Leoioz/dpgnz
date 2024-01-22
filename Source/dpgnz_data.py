@@ -108,4 +108,4 @@ if __name__ == '__main__':
     db.connect_mysql()
     # 方法二调用
     # db.connect_mysql("10.11.13.63","root","Bb92293--")
-    
+        
