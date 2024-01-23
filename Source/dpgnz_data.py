@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-18 14: 11: 06
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 20:06:52
+LastEditTime: 2024-01-23 21:52:06
 FilePath: \dpgnz\Source\dpgnz_data.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -29,11 +29,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
-
-from pymysql import *
-import pymysql
 '''
-description: 
+description: 从core导入所有pag
+return {*}
+'''
+from dpgnz_core import *
+
+'''
+description: 这份源码负责数据库，
 return {*}
 '''
 class dpgnz_mysql():

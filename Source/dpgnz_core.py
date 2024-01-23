@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 20:16:21
+LastEditTime: 2024-01-23 21:51:01
 FilePath: \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -29,13 +29,19 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
+'''
+description: 我不喜欢一份源码，分别引入pag，直接源码核心引入，一步到位
+return {*}
+'''
 import os
 import sys
-from loguru import *
+import time
+import pymysql
 from dpgnz_data import *
 from dpgnz_except import *
 from dpgnz_porperty import *
 from dpgnz_ui import *
+from loguru import *
 
 '''
 description: 
