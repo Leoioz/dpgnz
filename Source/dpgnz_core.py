@@ -1,4 +1,13 @@
 '''
+Author      : Leoioz
+Date        : 2024-01-21 11: 08: 25
+LastEditors : Leoioz 73148445+Leoioz@users.noreply.github.com
+LastEditTime: 2024-01-23 11: 06: 59
+FilePath    : \dpgnz\Source\dpgnz_core.py
+Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
+'''
+
+'''
 MIT License
 
 Copyright (c) 2024 Leoioz
@@ -38,7 +47,11 @@ class mywgeit(Ui_MainWindow):
         
 if  __name__ == "__main__" :
     
-    app = QApplication()
+    app = QApplication(
+        
+        
+        
+    )
     window = QMainWindow()
     ui =Ui_MainWindow()
     ui.setupUi(window)
