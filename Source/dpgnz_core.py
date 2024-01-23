@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 21:51:01
+LastEditTime: 2024-01-23 21:55:11
 FilePath: \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -36,6 +36,7 @@ return {*}
 import os
 import sys
 import time
+
 import pymysql
 from dpgnz_data import *
 from dpgnz_except import *
@@ -44,7 +45,7 @@ from dpgnz_ui import *
 from loguru import *
 
 '''
-description: 
+description: 窗口类
 return {*}
 '''
 class mywgeit(Ui_MainWindow):
@@ -53,7 +54,7 @@ class mywgeit(Ui_MainWindow):
         self.setupUi(self)
         self.retranslateUi(self)
 '''
-description: 
+description: 入口main
 return {*}
 '''
 if  __name__ == "__main__" :

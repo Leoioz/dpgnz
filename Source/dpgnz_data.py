@@ -30,7 +30,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 '''
-description: 从core导入所有pag
+description: 从core导入所有pag，注意这样搞，可能会有假异常现象出现，那是因为解释器无法直接找到一些库
 return {*}
 '''
 from dpgnz_core import *
