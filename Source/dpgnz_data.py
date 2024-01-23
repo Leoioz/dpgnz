@@ -1,9 +1,9 @@
 '''
 Author      : Leoioz
 Date        : 2024-01-18 14: 11: 06
-LastEditors : Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 11: 22: 24
-FilePath    : \dpgnz\Source\dpgnz_data.py
+LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
+LastEditTime: 2024-01-23 20:06:52
+FilePath: \dpgnz\Source\dpgnz_data.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
 '''
@@ -31,6 +31,7 @@ SOFTWARE.
 '''
 
 from pymysql import *
+import pymysql
 '''
 description: 
 return {*}
@@ -100,7 +101,12 @@ class dpgnz_mysql():
             pass
         finally:
             pass
-
+    '''
+    description: 
+    param {*} self
+    param {*} sql
+    return {*}
+    '''
     def do_sql(self,sql):
         print(self.cursor())
         try:
