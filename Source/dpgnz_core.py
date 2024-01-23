@@ -31,7 +31,7 @@ SOFTWARE.
 '''
 import os
 import sys
-
+from loguru import *
 from dpgnz_data import *
 from dpgnz_except import *
 from dpgnz_porperty import *
