@@ -1,0 +1,3 @@
+2024-01-23 21:12:39.434 | INFO     | __main__:some_function:49 - hello world
+2024-01-23 21:12:39.434 | DEBUG    | __main__:some_function:50 - hello world
+2024-01-23 21:12:39.435 | ERROR    | __main__:some_function:51 - hello world

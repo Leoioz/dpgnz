@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 19:51:34
+LastEditTime: 2024-01-23 20:16:21
 FilePath: \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -31,13 +31,11 @@ SOFTWARE.
 '''
 import os
 import sys
-import time
 
 from dpgnz_data import *
 from dpgnz_except import *
-from dpgnz_ui import *
-from dpgnz_except import *
 from dpgnz_porperty import *
+from dpgnz_ui import *
 
 '''
 description: 
