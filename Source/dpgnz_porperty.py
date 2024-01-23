@@ -46,7 +46,6 @@ class dpgnz_porperty:
 def some_function(text):
     print(text)
     logger.add('./log'+"{time:YYYY-MM-DD_HH-mm-ss}.log")
-    logger.add('./log/'+'{time:YYYY-MM-DD_HH-mm-ss}.log',rotation="500 MB", retention="7 days", enqueue=True, encoding="utf-8")
     logger.info(text)
     logger.debug(text)
     logger.error(text)
