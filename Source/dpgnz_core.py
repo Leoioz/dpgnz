@@ -1,12 +1,11 @@
 '''
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
-LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 17:52:40
-FilePath: \dpgnz\Source\dpgnz_core.py
+LastEditors : Leoioz 73148445+Leoioz@users.noreply.github.com
+LastEditTime: 2024-01-23 19: 26: 47
+FilePath    : \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
-
 '''
 MIT License
 
@@ -30,7 +29,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
-
 import os
 import sys
 import time
@@ -38,8 +36,14 @@ import time
 from dpgnz_data import *
 from dpgnz_except import *
 from dpgnz_ui import *
+from dpgnz_except import *
+from dp
 
 
+'''
+description: 
+return {*}
+'''
 class mywgeit(Ui_MainWindow):
     def __init__ (self):
         super().__init__()
@@ -47,6 +51,10 @@ class mywgeit(Ui_MainWindow):
         self.retranslateUi(self)
         
         
+'''
+description: 
+return {*}
+'''
 if  __name__ == "__main__" :
     app = QApplication()
     window = QMainWindow()

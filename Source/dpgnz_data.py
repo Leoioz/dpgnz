@@ -1,9 +1,9 @@
 '''
-Author: Leoioz
-Date: 2024-01-18 14:11:06
-LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 11:22:24
-FilePath: \dpgnz\Source\dpgnz_data.py
+Author      : Leoioz
+Date        : 2024-01-18 14: 11: 06
+LastEditors : Leoioz 73148445+Leoioz@users.noreply.github.com
+LastEditTime: 2024-01-23 11: 22: 24
+FilePath    : \dpgnz\Source\dpgnz_data.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
 '''
@@ -30,8 +30,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
 
-import pymysql
-    
+from pymysql import *
+'''
+description: 
+return {*}
+'''
 class dpgnz_mysql():
     '''
     description: 
