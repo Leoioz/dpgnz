@@ -1,4 +1,12 @@
 '''
+Author: Leoioz
+Date: 2024-01-18 14:11:06
+LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
+LastEditTime: 2024-01-23 11:22:24
+FilePath: \dpgnz\Source\dpgnz_data.py
+Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
+'''
+'''
 MIT License
 
 Copyright (c) 2024 Leoioz
@@ -25,6 +33,14 @@ SOFTWARE.
 import pymysql
     
 class dpgnz_mysql():
+    '''
+    description: 
+    param {*} self
+    param {*} host
+    param {*} user
+    param {*} password
+    return {*}
+    '''
     def __init__(self,host,user,password): 
         self.host                        = host
         self.user                        = user
@@ -59,6 +75,13 @@ class dpgnz_mysql():
     #         print("connect fail!")
     
     # 重构方法一   
+    '''
+    description: 
+    param {*} self
+    param {*} data
+    param {*} sql
+    return {*}
+    '''
     def connect_mysql(self):
         try:
             self.cursor.execute("SELECT VERSION()")

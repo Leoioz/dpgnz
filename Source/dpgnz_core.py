@@ -1,9 +1,9 @@
 '''
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
-LastEditors : Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 11: 06: 59
-FilePath    : \dpgnz\Source\dpgnz_core.py
+LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
+LastEditTime: 2024-01-23 17:52:40
+FilePath: \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
 
@@ -34,9 +34,11 @@ SOFTWARE.
 import os
 import sys
 import time
-from dpgnz_ui import *
+
 from dpgnz_data import *
 from dpgnz_except import *
+from dpgnz_ui import *
+
 
 class mywgeit(Ui_MainWindow):
     def __init__ (self):
@@ -46,12 +48,7 @@ class mywgeit(Ui_MainWindow):
         
         
 if  __name__ == "__main__" :
-    
-    app = QApplication(
-        
-        
-        
-    )
+    app = QApplication()
     window = QMainWindow()
     ui =Ui_MainWindow()
     ui.setupUi(window)
