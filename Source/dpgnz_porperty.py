@@ -13,7 +13,7 @@ return {*}
 from dpgnz_core import *
 
 '''
-description: 这份源码负责写所有的porperty
+description: 这份源码负责写所有的porperty装饰器
 return {*}
 '''
 class dpgnz_porperty:
