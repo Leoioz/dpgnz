@@ -1,9 +1,9 @@
 '''
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
-LastEditors : Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 19: 26: 47
-FilePath    : \dpgnz\Source\dpgnz_core.py
+LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
+LastEditTime: 2024-01-23 19:51:34
+FilePath: \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
 '''
@@ -37,8 +37,7 @@ from dpgnz_data import *
 from dpgnz_except import *
 from dpgnz_ui import *
 from dpgnz_except import *
-from dp
-
+from dpgnz_porperty import *
 
 '''
 description: 
@@ -49,8 +48,6 @@ class mywgeit(Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
         self.retranslateUi(self)
-        
-        
 '''
 description: 
 return {*}
