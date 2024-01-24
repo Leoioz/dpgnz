@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-18 14: 11: 06
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 21:52:06
+LastEditTime: 2024-01-24 11:22:49
 FilePath: \dpgnz\Source\dpgnz_data.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -49,13 +49,13 @@ class dpgnz_mysql():
     return {*}
     '''
     def __init__(self,host,user,password): 
-        self.host                        = host
-        self.user                        = user
-        self.password                    = password
-        self.database                    = 'mysql'
-        self.charset                     = 'utf8'
-        self.db                          = pymysql.connect(host = self.host,user = self.user,password = self.password,database = self.database,charset = self.charset)
-        self.cursor                      = self.db.cursor()
+        self.host     = host
+        self.user     = user
+        self.password = password
+        self.database = 'mysql'
+        self.charset  = 'utf8'
+        self.db       = pymysql.connect(host = self.host,user = self.user,password = self.password,database = self.database,charset = self.charset)
+        self.cursor   = self.db.cursor()
         
     # 方法一  
     # def connect_mysql(self):
