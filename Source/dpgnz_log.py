@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-24 11: 29: 57
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-24 16:30:21
+LastEditTime: 2024-01-24 17:59:34
 FilePath: \dpgnz\Source\dpgnz_log.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -33,12 +33,15 @@ class dpgnz_log(Logger):
                             'ERROR',
                             'CRITICAL'] #用来指定日志等级
         self.format_rule = format_rule  #用来指定log信息格式
+        self.colorize    = colorize     #用来指定log是否自动配色
+        self.serialize   = serialize    #用来指定是否将日志装换为json格式
         self.rotation    = rotation     #用来指定log文件多大，存放时间，是否循环存储等内容
         self.retention   = retention    #用来放指定多少时间后进行清理
         self.compression = compression  #用来指定log文件是否压缩
-        self.colorize    = colorize     #用来指定log是否自动配色
+        self.backtrace   = backtrace    #用来跟踪异常，并把异常内容输出，这个会暴露源码
+        self.diagnose    = diagnose     #用来跟踪异常，并把变量内容和堆栈输出，这个会暴露源码
 
-        self.serialize   = serialize    #用来指定是否将日志装换为json格式
+        
         
     def info_log_format(self):
         
