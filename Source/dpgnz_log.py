@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-24 11: 29: 57
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-24 15:42:05
+LastEditTime: 2024-01-24 16:30:21
 FilePath: \dpgnz\Source\dpgnz_log.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -15,14 +15,33 @@ logger.add("out.log", backtrace=True, diagnose=True)  # 注意，在生产环境
 class dpgnz_log(Logger):
     def __init__(self) -> None:
         super().__init__()
-        self.save_path=save_path    #用来放
-        self.descr=descr#用来加备注文字
-        self.rotation=rotation#用来放
-        self.rotation=rotation#用来放
-        self.rotation=rotation#用来放
-        self.rotation=rotation#用来放
+        '''
+        description: save_path，descr都是sink形参的子参
+        return {*}
+        '''
+        self.save_path   = save_path    #用来放log文件路径
+        self.descr       = descr        #用来加备注文字
+        '''
+        description: 往下是其他形参
+        return {*}
+        '''
+        self.level       = ['TRACE',
+                            'DEBUG',
+                            'INFO',
+                            'SUCCESS',
+                            'WARNING',
+                            'ERROR',
+                            'CRITICAL'] #用来指定日志等级
+        self.format_rule = format_rule  #用来指定log信息格式
+        self.rotation    = rotation     #用来指定log文件多大，存放时间，是否循环存储等内容
+        self.retention   = retention    #用来放指定多少时间后进行清理
+        self.compression = compression  #用来指定log文件是否压缩
+        self.colorize    = colorize     #用来指定log是否自动配色
+
+        self.serialize   = serialize    #用来指定是否将日志装换为json格式
         
     def info_log_format(self):
+        
         pass
     
     def error_log_format(self):

@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-23 19: 27: 49
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 21:46:41
+LastEditTime: 2024-01-24 15:53:02
 FilePath: \dpgnz\Source\dpgnz_porperty.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
