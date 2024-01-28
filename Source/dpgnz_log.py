@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-24 11: 29: 57
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-25 09:35:36
+LastEditTime: 2024-01-28 07:15:53
 FilePath: \dpgnz\Source\dpgnz_log.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
