@@ -17,7 +17,7 @@
    <string notr="true">font: 10pt &quot;汉仪正圆-55W&quot;;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -143,10 +143,29 @@
          <item>
           <layout class="QVBoxLayout" name="verticalLayout_2">
            <item>
-            <widget class="QLineEdit" name="lineEdit_3"/>
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="toolTip">
+              <string>请输入你的姓名</string>
+             </property>
+             <property name="statusTip">
+              <string/>
+             </property>
+             <property name="whatsThis">
+              <string/>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="placeholderText">
+              <string>请输入你的姓名</string>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QComboBox" name="comboBox">
+             <property name="toolTip">
+              <string>选择你的部门</string>
+             </property>
              <item>
               <property name="text">
                <string>技术部</string>
@@ -177,15 +196,17 @@
                <string>QA</string>
               </property>
              </item>
-
-
-
-
-
             </widget>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_2"/>
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="toolTip">
+              <string>例如：YA#2012，办公楼3#301</string>
+             </property>
+             <property name="placeholderText">
+              <string>请输入你办公地点</string>
+             </property>
+            </widget>
            </item>
            <item>
             <widget class="QComboBox" name="comboBox_2">
@@ -351,42 +372,42 @@
           <item>
            <widget class="QLabel" name="label_5">
             <property name="text">
-             <string>TextLabel</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_8">
             <property name="text">
-             <string>TextLabel</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_13">
             <property name="text">
-             <string>TextLabel</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_14">
             <property name="text">
-             <string>TextLabel</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_15">
             <property name="text">
-             <string>TextLabel</string>
+             <string/>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QLabel" name="label_16">
             <property name="text">
-             <string>TextLabel</string>
+             <string/>
             </property>
            </widget>
           </item>

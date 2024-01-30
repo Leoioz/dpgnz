@@ -28,10 +28,10 @@ class Ui_MainWindow(object):
         MainWindow.setStyleSheet(u"font: 10pt \"\u6c49\u4eea\u6b63\u5706-55W\";")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.widget = QWidget(self.centralwidget)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(10, 10, 351, 382))
-        self.verticalLayout_6 = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.centralwidget)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(10, 10, 351, 382))
+        self.verticalLayout_6 = QVBoxLayout(self.layoutWidget)
         self.verticalLayout_6.setObjectName(u"verticalLayout_6")
         self.verticalLayout_6.setContentsMargins(0, 0, 0, 0)
         self.verticalLayout_3 = QVBoxLayout()
@@ -40,7 +40,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.verticalLayout = QVBoxLayout()
         self.verticalLayout.setObjectName(u"verticalLayout")
-        self.label_6 = QLabel(self.widget)
+        self.label_6 = QLabel(self.layoutWidget)
         self.label_6.setObjectName(u"label_6")
         self.label_6.setEnabled(False)
         self.label_6.setMinimumSize(QSize(91, 20))
@@ -49,7 +49,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label_6)
 
-        self.label_11 = QLabel(self.widget)
+        self.label_11 = QLabel(self.layoutWidget)
         self.label_11.setObjectName(u"label_11")
         self.label_11.setEnabled(False)
         self.label_11.setMinimumSize(QSize(91, 20))
@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label_11)
 
-        self.label_7 = QLabel(self.widget)
+        self.label_7 = QLabel(self.layoutWidget)
         self.label_7.setObjectName(u"label_7")
         self.label_7.setEnabled(False)
         self.label_7.setMinimumSize(QSize(91, 20))
@@ -66,7 +66,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout.addWidget(self.label_7)
 
-        self.label_12 = QLabel(self.widget)
+        self.label_12 = QLabel(self.layoutWidget)
         self.label_12.setObjectName(u"label_12")
         self.label_12.setEnabled(False)
         self.label_12.setMinimumSize(QSize(91, 20))
@@ -86,12 +86,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2 = QVBoxLayout()
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.lineEdit_3 = QLineEdit(self.widget)
+        self.lineEdit_3 = QLineEdit(self.layoutWidget)
         self.lineEdit_3.setObjectName(u"lineEdit_3")
 
         self.verticalLayout_2.addWidget(self.lineEdit_3)
 
-        self.comboBox = QComboBox(self.widget)
+        self.comboBox = QComboBox(self.layoutWidget)
         self.comboBox.addItem("")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
@@ -102,12 +102,12 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.comboBox)
 
-        self.lineEdit_2 = QLineEdit(self.widget)
+        self.lineEdit_2 = QLineEdit(self.layoutWidget)
         self.lineEdit_2.setObjectName(u"lineEdit_2")
 
         self.verticalLayout_2.addWidget(self.lineEdit_2)
 
-        self.comboBox_2 = QComboBox(self.widget)
+        self.comboBox_2 = QComboBox(self.layoutWidget)
         self.comboBox_2.addItem("")
         self.comboBox_2.addItem("")
         self.comboBox_2.setObjectName(u"comboBox_2")
@@ -120,7 +120,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addLayout(self.horizontalLayout)
 
-        self.pushButton = QPushButton(self.widget)
+        self.pushButton = QPushButton(self.layoutWidget)
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setFont(font)
 
@@ -129,7 +129,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addLayout(self.verticalLayout_3)
 
-        self.groupBox = QGroupBox(self.widget)
+        self.groupBox = QGroupBox(self.layoutWidget)
         self.groupBox.setObjectName(u"groupBox")
         self.formLayout = QFormLayout(self.groupBox)
         self.formLayout.setObjectName(u"formLayout")
@@ -224,7 +224,7 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.groupBox)
 
-        self.progressBar = QProgressBar(self.widget)
+        self.progressBar = QProgressBar(self.layoutWidget)
         self.progressBar.setObjectName(u"progressBar")
         self.progressBar.setValue(0)
 
@@ -249,6 +249,17 @@ class Ui_MainWindow(object):
         self.label_11.setText(QCoreApplication.translate("MainWindow", u"\u8d23\u4efb\u4eba\u6240\u5c5e\u90e8\u95e8\uff1a", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"\u6240\u5728\u529e\u516c\u5730\u70b9\uff1a", None))
         self.label_12.setText(QCoreApplication.translate("MainWindow", u"\u7535\u8111\u7c7b\u578b\uff1a", None))
+#if QT_CONFIG(tooltip)
+        self.lineEdit_3.setToolTip(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u4f60\u7684\u59d3\u540d", None))
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(statustip)
+        self.lineEdit_3.setStatusTip("")
+#endif // QT_CONFIG(statustip)
+#if QT_CONFIG(whatsthis)
+        self.lineEdit_3.setWhatsThis("")
+#endif // QT_CONFIG(whatsthis)
+        self.lineEdit_3.setText("")
+        self.lineEdit_3.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u4f60\u7684\u59d3\u540d", None))
         self.comboBox.setItemText(0, QCoreApplication.translate("MainWindow", u"\u6280\u672f\u90e8", None))
         self.comboBox.setItemText(1, QCoreApplication.translate("MainWindow", u"QA", None))
         self.comboBox.setItemText(2, QCoreApplication.translate("MainWindow", u"QA", None))
@@ -256,6 +267,13 @@ class Ui_MainWindow(object):
         self.comboBox.setItemText(4, QCoreApplication.translate("MainWindow", u"QA", None))
         self.comboBox.setItemText(5, QCoreApplication.translate("MainWindow", u"QA", None))
 
+#if QT_CONFIG(tooltip)
+        self.comboBox.setToolTip(QCoreApplication.translate("MainWindow", u"\u9009\u62e9\u4f60\u7684\u90e8\u95e8", None))
+#endif // QT_CONFIG(tooltip)
+#if QT_CONFIG(tooltip)
+        self.lineEdit_2.setToolTip(QCoreApplication.translate("MainWindow", u"\u4f8b\u5982\uff1aYA#2012\uff0c\u529e\u516c\u697c3#301", None))
+#endif // QT_CONFIG(tooltip)
+        self.lineEdit_2.setPlaceholderText(QCoreApplication.translate("MainWindow", u"\u8bf7\u8f93\u5165\u4f60\u529e\u516c\u5730\u70b9", None))
         self.comboBox_2.setItemText(0, QCoreApplication.translate("MainWindow", u"\u53f0\u5f0f\u8ba1\u7b97\u673a", None))
         self.comboBox_2.setItemText(1, QCoreApplication.translate("MainWindow", u"\u7b14\u8bb0\u672c\u7535\u8111", None))
 
@@ -267,11 +285,11 @@ class Ui_MainWindow(object):
         self.label_9.setText(QCoreApplication.translate("MainWindow", u"\u786c\u76d8\u5e8f\u5217\u53f7\uff1a", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"IP\u5730\u5740\uff1a", None))
         self.label_4.setText(QCoreApplication.translate("MainWindow", u"MAC\u5730\u5740\uff1a", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_8.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_13.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_14.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_15.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
-        self.label_16.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.label_5.setText("")
+        self.label_8.setText("")
+        self.label_13.setText("")
+        self.label_14.setText("")
+        self.label_15.setText("")
+        self.label_16.setText("")
     # retranslateUi
 
