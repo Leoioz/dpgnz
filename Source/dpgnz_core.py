@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-23 21:55:11
+LastEditTime: 2024-01-30 14:56:39
 FilePath: \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -48,11 +48,19 @@ from loguru import *
 description: 窗口类
 return {*}
 '''
-class mywgeit(Ui_MainWindow):
+class mywindow(Ui_MainWindow):
     def __init__ (self):
         super().__init__()
-        self.setupUi(self)
-        self.retranslateUi(self)
+        # self.setupUi(self)
+        # self.retranslateUi(self)
+        
+    def readpro(self):
+        current_value=self.progressBar.value()
+        print(current_value)
+        next_value=current_value+1
+        self.progressBar.setValue(next_value)
+        print(next_value)
+        
 '''
 description: 入口main
 return {*}
@@ -60,7 +68,12 @@ return {*}
 if  __name__ == "__main__" :
     app = QApplication()
     window = QMainWindow()
-    ui =Ui_MainWindow()
+
+    ui =mywindow()
     ui.setupUi(window)
     window.show()
+    
+    ui.pushButton.clicked.connect(ui.readpro)
+    
+
     app.exec_()
