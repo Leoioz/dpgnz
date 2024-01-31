@@ -2,7 +2,7 @@
 Author      : Leoioz
 Date        : 2024-01-21 11: 08: 25
 LastEditors: Leoioz 73148445+Leoioz@users.noreply.github.com
-LastEditTime: 2024-01-30 14:56:39
+LastEditTime: 2024-01-31 17:41:41
 FilePath: \dpgnz\Source\dpgnz_core.py
 Copyright (c) 2024 by ${73148445+Leoioz@users.noreply.github.com}, All Rights Reserved. 
 '''
@@ -68,12 +68,11 @@ return {*}
 if  __name__ == "__main__" :
     app = QApplication()
     window = QMainWindow()
-
-    ui =mywindow()
+    
+    ui = Ui_MainWindow
     ui.setupUi(window)
+    
     window.show()
     
-    ui.pushButton.clicked.connect(ui.readpro)
-    
-
+    # ui.pushButton.clicked.connect(ui.readpro)
     app.exec_()
